@@ -1,0 +1,285 @@
+/* Reset & Dasar */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Navigasi (Dashboard Karyawan & Admin) */
+header {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+header a {
+    background-color: #dc3545;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 7px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+header a:hover {
+    background-color: #c82333;
+}
+
+/* Container Utama (Dashboard & Form Cuti) */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Kotak Login (login.php) */
+.login-box {
+    max-width: 360px;
+    margin: 80px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-box h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form Input, Select, Textarea & Button */
+label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #444444;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 9px 10px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+input[readonly] {
+    background-color: #e9ecef;
+    color: #555555;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.login-box button[type="submit"] {
+    background-color: #007bff;
+}
+
+.login-box button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Link Kembali & Tombol Tambah */
+a {
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.info-cuti {
+    background-color: #f8f9fa;
+    border: 1px solid #e1e5eb;
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-cuti h3 {
+    margin: 0;
+    color: #007bff;
+}
+
+.info-cuti a {
+    background-color: #28a745;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 9px 14px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.info-cuti a:hover {
+    background-color: #218838;
+    text-decoration: none;
+}
+
+/* Tabel Riwayat & Daftar Cuti */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #dddddd;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background-color: #f8f9fa;
+    color: #222222;
+}
+
+tr:nth-child(even) {
+    background-color: #fcfcfd;
+}
+
+/* Pesan Sukses & Error */
+.pesan-sukses {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 10px 14px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.pesan-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 10px 14px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* ===== Tambahan untuk fitur baru ===== */
+
+/* Container lebih lebar untuk tabel dengan banyak kolom */
+.container-lebar {
+    max-width: 1150px;
+}
+
+/* Tabel yang lebar bisa digeser ke samping di layar kecil */
+.table-wrap {
+    overflow-x: auto;
+}
+
+/* Catatan kecil di bawah input */
+.catatan {
+    font-size: 13px;
+    color: #666666;
+    margin: 4px 0 0;
+}
+
+input[type="file"] {
+    width: 100%;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* Form filter & pencarian di dashboard admin */
+.filter-form {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin: 15px 0;
+}
+
+.filter-form select,
+.filter-form input[type="text"] {
+    width: auto;
+    min-width: 190px;
+}
+
+/* Tombol kecil di kolom aksi */
+.form-inline {
+    display: inline;
+}
+
+button[type="submit"].btn-kecil,
+a.btn-kecil {
+    display: inline-block;
+    width: auto;
+    padding: 6px 11px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button[type="submit"].btn-setuju {
+    background-color: #28a745;
+}
+
+button[type="submit"].btn-tolak,
+button[type="submit"].btn-hapus {
+    background-color: #dc3545;
+}
+
+button[type="submit"].btn-tolak:hover,
+button[type="submit"].btn-hapus:hover {
+    background-color: #c82333;
+}
+
+button[type="submit"].btn-edit,
+a.btn-edit {
+    background-color: #007bff;
+}
+
+a.btn-reset {
+    background-color: #6c757d;
+}
